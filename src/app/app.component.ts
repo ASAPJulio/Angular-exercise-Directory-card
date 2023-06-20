@@ -10,9 +10,6 @@ export class AppComponent implements OnInit {
   presentText!: String;
 
   ngOnInit(): void {
-    this.presentText = "Ceci est un test d'utilisation de Angular";
-  }
-
-  textFonction () {
+    this.presentText = "Ceci est un test d'utilisation";
   }
 }

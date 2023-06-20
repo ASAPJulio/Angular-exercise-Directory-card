@@ -1,9 +1,11 @@
 <div class="card">
-    <h1>Jules Tellier</h1>
-    <img src="/assets/img/IMG_3143.JPG" alt="identity-picture">
+    <h1>{{contactType.nameInfo}}</h1>
+    <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo">
+    <img *ngIf="!contactType.imageInfo" [src]="contactType.imageInfo">
+    <!-- <img src="{{contactType.imageInfo}}" alt="identiy-picture"> -->
     <ul>
-        <li>Né le: 31/03/1998</li>
-        <li>Sexe: Masculin</li>
-        <li>Taille: 1m85</li>
+        <li>{{contactType.birthdayDate}}</li>
+        <li>{{contactType.sexeInfo}}</li>
+        <li>{{contactType.heightInfo}}</li>
     </ul>
 </div>
