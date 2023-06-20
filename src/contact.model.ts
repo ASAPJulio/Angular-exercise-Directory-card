@@ -4,4 +4,5 @@ export class ContactModel {
     birthdayDate!: String;
     sexeInfo!: String;
     heightInfo!: String;
+    typeInfo!: String;
 }

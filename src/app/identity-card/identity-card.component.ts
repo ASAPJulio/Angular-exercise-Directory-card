@@ -6,6 +6,7 @@ import { ContactModel } from 'src/contact.model';
   templateUrl: './identity-card.component.html',
   styleUrls: ['./identity-card.component.css']
 })
+
 export class IdentityCardComponent implements OnInit {
   contactType!: ContactModel;
   ngOnInit(): void {
@@ -15,9 +16,16 @@ export class IdentityCardComponent implements OnInit {
     this.contactType.birthdayDate = "né le 31/03/1998";
     this.contactType.sexeInfo = "Masculin";
     this.contactType.heightInfo = "1m94";
-    
-    if (!this.contactType.imageInfo) {
-      this.contactType.imageInfo = "/assets/img/ob_233a89_lescamerasplanqueesd-preview.jpg";
+    this.contactType.typeInfo = "Client";
+
+
+    if (this.contactType.typeInfo != 'Client') {
+      this.contactType.imageInfo = "/assets/img/fournisseur.png";
+      this.contactType.nameInfo = "McGyver"
+      this.contactType.birthdayDate = "né le 14/09/1968";
+      this.contactType.sexeInfo = "Masculin";
+      this.contactType.heightInfo = "1m65";
+      this.contactType.typeInfo = "Fournisseur";
     }
   }
   

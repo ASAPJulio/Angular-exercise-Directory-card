@@ -1,11 +1,10 @@
-<div class="card">
+<div class="card" [ngClass]="{providerCard: contactType.typeInfo != 'Client'}">
     <h1>{{contactType.nameInfo}}</h1>
-    <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo">
-    <img *ngIf="!contactType.imageInfo" [src]="contactType.imageInfo">
-    <!-- <img src="{{contactType.imageInfo}}" alt="identiy-picture"> -->
+    <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo" alt="identity-picture"> 
     <ul>
         <li>{{contactType.birthdayDate}}</li>
         <li>{{contactType.sexeInfo}}</li>
         <li>{{contactType.heightInfo}}</li>
+        <li>{{contactType.typeInfo}}</li>
     </ul>
 </div>
