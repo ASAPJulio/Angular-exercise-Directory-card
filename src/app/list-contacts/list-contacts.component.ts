@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { ContactModel } from 'src/contact.model';
 
 @Component({
   selector: 'app-list-contacts',
   templateUrl: './list-contacts.component.html',
-  styleUrls: ['./list-contacts.component.css']
+  styleUrls: ['./list-contacts.component.css'],
 })
 export class ListContactsComponent implements OnInit {
 
   contactTab!: ContactModel[];
 
-  ngOnInit(): void {
+   ngOnInit(): void {
 
     this.contactTab = [
       {

@@ -1,4 +1,3 @@
-<ul *ngFor="let tmp of contactTab">
-    <li>{{tmp.nameInfo}}</li>
-    <li>{{tmp.sexeInfo}}</li>
-</ul>
+<div *ngFor="let tmp of contactTab">
+    <app-identity-card [contactType]="tmp"></app-identity-card>
+</div>
