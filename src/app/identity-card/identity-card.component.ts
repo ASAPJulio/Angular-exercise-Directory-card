@@ -21,7 +21,7 @@ export class IdentityCardComponent implements OnInit {
 
     if (this.contactType.typeInfo != 'Client') {
       this.contactType.imageInfo = "/assets/img/fournisseur.png";
-      this.contactType.nameInfo = "McGyver"
+      this.contactType.nameInfo = "André Leroux"
       this.contactType.birthdayDate = "né le 14/09/1968";
       this.contactType.sexeInfo = "Masculin";
       this.contactType.heightInfo = "1m65";
