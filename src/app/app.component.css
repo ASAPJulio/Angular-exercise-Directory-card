@@ -7,13 +7,14 @@ main {
 
 .encadre {
     display: flex;
+    flex-direction: row;
     width: 95%;
     padding: 1%;
     justify-content: space-around;
     border: 2px solid black;
 }
 
- @media (max-width: 1800px) {
+ /* @media (max-width: 1800px) {
     .encadre {
         padding: 0;
     }
@@ -47,4 +48,4 @@ main {
         flex-direction: column;
         padding: 3% 10%;
     }
-}
+} */

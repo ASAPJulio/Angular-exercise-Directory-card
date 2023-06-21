@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { ContactModel } from 'src/contact.model';
 
 @Component({
@@ -7,9 +7,15 @@ import { ContactModel } from 'src/contact.model';
   styleUrls: ['./identity-card.component.css']
 })
 
-export class IdentityCardComponent { 
+export class IdentityCardComponent implements OnInit {
 
- @Input() contactType!: ContactModel;
+  @Input() contactType!: ContactModel;
+  
+  ngOnInit(): void {
+    if (!this.contactType.imageInfo){
+      this.contactType.imageInfo = "/assets/img/no-pic.jpg"
+    }
+  } 
 
   title = 'AnnuaireAngular';
 }

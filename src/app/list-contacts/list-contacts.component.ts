@@ -31,7 +31,7 @@ export class ListContactsComponent implements OnInit {
       },
       {
         imageInfo: "",
-        nameInfo: "Mathilde Monet",
+        nameInfo: "Liza Monet",
         birthdayDate: "15/12/1985",
         sexeInfo: "Féminin",
         heightInfo: "1m68",
@@ -47,7 +47,7 @@ export class ListContactsComponent implements OnInit {
       },
       {
         imageInfo: "",
-        nameInfo: "Elsa Gael",
+        nameInfo: "Lorie Gael",
         birthdayDate: "06/09/1996",
         sexeInfo: "Féminin",
         heightInfo: "1m70",
@@ -59,7 +59,7 @@ export class ListContactsComponent implements OnInit {
         birthdayDate: "12 année Azan",
         sexeInfo: "??",
         heightInfo: "2m05",
-        typeInfo: "Fournisseur"
+        typeInfo: "Visiteur"
       },
     ]
   }
