@@ -15,51 +15,57 @@ export class ListContactsComponent implements OnInit {
     this.contactTab = [
       {
         imageInfo: "/assets/img/fournisseur.png",
-        nameInfo: "André Leroux",
-        birthdayDate: "né le 14/09/1968",
+        nameInfo: "André",
+        lastNameInfo: "Leroux", 
+        birthdayDate: "14/09/1968",
         sexeInfo: "Masculin",
         heightInfo: "1m65",
         typeInfo: "Fournisseur"
       },
       {
         imageInfo: "/assets/img/IMG_3143.JPG",
-        nameInfo: "Jules Tellier",
+        nameInfo: "Jules",
+        lastNameInfo: "Tellier",
         birthdayDate: "31/03/1998",
         sexeInfo: "Masculin",
         heightInfo: "1m85",
         typeInfo: "Client"
       },
       {
-        imageInfo: "",
-        nameInfo: "Liza Monet",
+        imageInfo: "/assets/img/Liza.jpg",
+        nameInfo: "Liza",
+        lastNameInfo: "Monet",
         birthdayDate: "15/12/1985",
         sexeInfo: "Féminin",
         heightInfo: "1m68",
         typeInfo: "Cliente"
       },
       {
-        imageInfo: "",
-        nameInfo: "Fred Pluton",
+        imageInfo: "/assets/img/Greg.jpg",
+        nameInfo: "Greg",
+        lastNameInfo: "Allo",
         birthdayDate: "24/04/1964",
         sexeInfo: "Masculin",
         heightInfo: "1m78",
         typeInfo: "Fournisseur"
       },
       {
-        imageInfo: "",
-        nameInfo: "Lorie Gael",
+        imageInfo: "/assets/img/perso1.png",
+        nameInfo: "Lorie",
+        lastNameInfo: "Gael",
         birthdayDate: "06/09/1996",
         sexeInfo: "Féminin",
         heightInfo: "1m70",
         typeInfo: "Fournisseuse"
       },
       {
-        imageInfo: "",
+        imageInfo: "/assets/img/alien.jpg",
         nameInfo: "Vorian",
+        lastNameInfo: "Gulgu",
         birthdayDate: "12 année Azan",
         sexeInfo: "??",
         heightInfo: "2m05",
-        typeInfo: "Visiteur"
+        typeInfo: "Visiteu.r.se"
       },
     ]
   }

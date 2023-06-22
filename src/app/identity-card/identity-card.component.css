@@ -9,6 +9,7 @@ img {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 20px;
     align-items: center;
     border: solid 1px;
     border-radius: 15px; 
@@ -19,9 +20,10 @@ img {
 }
 
 .supplierCard {
-    background-image: linear-gradient(to right, rgba(215, 122, 96, 0.3),rgba(158, 64, 5, 0.2));
+    background-image: linear-gradient(to right, rgba(216, 122, 90, 0.248),rgba(223, 127, 86, 0.84));
     color:#db1f0a ;
     width: 95%;
+    font-size: 20px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -29,5 +31,10 @@ img {
     border: solid 1px;
     border-radius: 15px; 
     border: solid 1px black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.visitorCard {
+    background-image: linear-gradient(to right, rgba(79, 127, 61, 0.248),rgba(41, 122, 6, 0.84));
+    color: #091e10;
 }
