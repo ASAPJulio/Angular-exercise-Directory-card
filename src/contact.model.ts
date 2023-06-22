@@ -2,7 +2,7 @@ export class ContactModel {
     imageInfo!: String;
     nameInfo!: String;
     lastNameInfo!: String;
-    birthdayDate!: String;
+    birthdayDate!: Date;
     sexeInfo!: String;
     heightInfo!: String;
     typeInfo!: String;

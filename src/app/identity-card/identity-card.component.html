@@ -4,7 +4,7 @@
     <h1>{{contactType.nameInfo}} <br> {{contactType.lastNameInfo}}</h1>
     <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo" alt="identity-picture"> 
     <ul>
-        <li>{{contactType.birthdayDate}}</li>
+        <li>{{contactType.birthdayDate | date: "dd/MM/yyyy"}}</li>
         <li>{{contactType.sexeInfo}}</li>
         <li>{{contactType.heightInfo}}</li>
         <li>{{contactType.typeInfo}}</li>

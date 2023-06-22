@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit} from '@angular/core';
 import { ContactModel } from 'src/contact.model';
 
@@ -17,7 +18,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/fournisseur.png",
         nameInfo: "André",
         lastNameInfo: "Leroux", 
-        birthdayDate: "14/09/1968",
+        birthdayDate: new Date (1964, 9, 14),
         sexeInfo: "Masculin",
         heightInfo: "1m65",
         typeInfo: "Fournisseur"
@@ -26,7 +27,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/IMG_3143.JPG",
         nameInfo: "Jules",
         lastNameInfo: "Tellier",
-        birthdayDate: "31/03/1998",
+        birthdayDate: new Date (1998, 2, 31),
         sexeInfo: "Masculin",
         heightInfo: "1m85",
         typeInfo: "Client"
@@ -35,7 +36,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/Liza.jpg",
         nameInfo: "Liza",
         lastNameInfo: "Monet",
-        birthdayDate: "15/12/1985",
+        birthdayDate: new Date (1985, 12, 15),
         sexeInfo: "Féminin",
         heightInfo: "1m68",
         typeInfo: "Cliente"
@@ -44,7 +45,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/Greg.jpg",
         nameInfo: "Greg",
         lastNameInfo: "Allo",
-        birthdayDate: "24/04/1964",
+        birthdayDate: new Date (1964, 9, 24) ,
         sexeInfo: "Masculin",
         heightInfo: "1m78",
         typeInfo: "Fournisseur"
@@ -53,7 +54,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/perso1.png",
         nameInfo: "Lorie",
         lastNameInfo: "Gael",
-        birthdayDate: "06/09/1996",
+        birthdayDate: new Date (1996, 6, 9),
         sexeInfo: "Féminin",
         heightInfo: "1m70",
         typeInfo: "Fournisseuse"
@@ -62,7 +63,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/alien.jpg",
         nameInfo: "Vorian",
         lastNameInfo: "Gulgu",
-        birthdayDate: "12 année Azan",
+        birthdayDate: new Date (1710, 8, 17),
         sexeInfo: "??",
         heightInfo: "2m05",
         typeInfo: "Visiteu.r.se"
