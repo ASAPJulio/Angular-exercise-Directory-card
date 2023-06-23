@@ -67,7 +67,7 @@ export class ContactService {
     getContacts(): ContactModel[] {
       return this.contactTab;
     }
-  
+    
   };
 
  
