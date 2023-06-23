@@ -36,7 +36,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/Liza.jpg",
         nameInfo: "Liza",
         lastNameInfo: "Monet",
-        birthdayDate: new Date (1985, 12, 15),
+        birthdayDate: new Date (1990, 12, 15),
         sexeInfo: "Féminin",
         heightInfo: "1m68",
         typeInfo: "Cliente"
@@ -45,7 +45,7 @@ export class ListContactsComponent implements OnInit {
         imageInfo: "/assets/img/Greg.jpg",
         nameInfo: "Greg",
         lastNameInfo: "Allo",
-        birthdayDate: new Date (1964, 9, 24) ,
+        birthdayDate: new Date (1984, 9, 24) ,
         sexeInfo: "Masculin",
         heightInfo: "1m78",
         typeInfo: "Fournisseur"
