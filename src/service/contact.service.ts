@@ -15,7 +15,8 @@ export class ContactService {
         birthdayDate: new Date(1964, 9, 14),
         sexeInfo: "Masculin",
         heightInfo: "1m65",
-        typeInfo: "Fournisseur"
+        typeInfo: "Fournisseur",
+        item: 0
       },
       {
         imageInfo: "/assets/img/IMG_3143.JPG",
@@ -24,7 +25,8 @@ export class ContactService {
         birthdayDate: new Date(1998, 2, 31),
         sexeInfo: "Masculin",
         heightInfo: "1m85",
-        typeInfo: "Client"
+        typeInfo: "Client",
+        item: 1
       },
       {
         imageInfo: "/assets/img/Liza.jpg",
@@ -33,7 +35,8 @@ export class ContactService {
         birthdayDate: new Date(1990, 12, 15),
         sexeInfo: "Féminin",
         heightInfo: "1m68",
-        typeInfo: "Cliente"
+        typeInfo: "Cliente",
+        item: 2
       },
       {
         imageInfo: "/assets/img/Greg.jpg",
@@ -42,7 +45,8 @@ export class ContactService {
         birthdayDate: new Date(1984, 9, 24),
         sexeInfo: "Masculin",
         heightInfo: "1m78",
-        typeInfo: "Fournisseur"
+        typeInfo: "Fournisseur",
+        item: 3
       },
       {
         imageInfo: "/assets/img/perso1.png",
@@ -51,7 +55,8 @@ export class ContactService {
         birthdayDate: new Date(1996, 6, 9),
         sexeInfo: "Féminin",
         heightInfo: "1m70",
-        typeInfo: "Fournisseuse"
+        typeInfo: "Fournisseuse",
+        item: 4
       },
       {
         imageInfo: "/assets/img/alien.jpg",
@@ -60,7 +65,8 @@ export class ContactService {
         birthdayDate: new Date(1710, 8, 17),
         sexeInfo: "??",
         heightInfo: "2m05",
-        typeInfo: "Visiteu.r.se"
+        typeInfo: "Visiteu.r.se",
+        item: 5
       },
     ]
 
@@ -68,6 +74,13 @@ export class ContactService {
       return this.contactTab;
     }
     
+    getDetails(item: number): ContactModel{
+      for (let i = 0; i < this.contactTab.length; i++) {
+        if (this.contactTab[i].item === item)
+              return this.contactTab[i];
+      }
+      return new ContactModel();
+    }
   };
 
  

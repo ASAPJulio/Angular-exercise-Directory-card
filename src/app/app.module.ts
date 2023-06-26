@@ -4,15 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { IdentityCardComponent } from './identity-card/identity-card.component';
 import { ListContactsComponent } from './list-contacts/list-contacts.component';
+import { DetailsCardComponent } from './details-card/details-card.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     IdentityCardComponent,
-    ListContactsComponent
+    ListContactsComponent,
+    DetailsCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

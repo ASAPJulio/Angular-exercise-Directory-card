@@ -6,4 +6,5 @@ export class ContactModel {
     sexeInfo!: String;
     heightInfo!: String;
     typeInfo!: String;
+    item!: number
 }

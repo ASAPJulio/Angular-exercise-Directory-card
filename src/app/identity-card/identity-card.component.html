@@ -1,8 +1,10 @@
-<div class="card" 
-[ngClass]="{supplierCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente', 
-            visitorCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente' && contactType.typeInfo !== 'Fournisseur' && contactType.typeInfo !== 'Fournisseuse'}">
+<div class="card" routerlink="DetailsCardComponent" href="DetailsContact/:item"
+    [ngClass]="{supplierCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente', 
+            visitorCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente' && contactType.typeInfo !== 'Fournisseur' && contactType.typeInfo !== 'Fournisseuse',
+            undefinedCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente' && contactType.typeInfo !== 'Fournisseur' && contactType.typeInfo !== 'Fournisseuse' && contactType.typeInfo !== 'Visiteu.r.se'}">
+    
     <h1>{{contactType.nameInfo}} <br> {{contactType.lastNameInfo}}</h1>
-    <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo" alt="identity-picture"> 
+    <img *ngIf="contactType.imageInfo" [src]="contactType.imageInfo" alt="identity-picture">
     <ul>
         <li>{{contactType.birthdayDate | date: "dd/MM/yyyy"}}</li>
         <li>{{contactType.sexeInfo}}</li>
