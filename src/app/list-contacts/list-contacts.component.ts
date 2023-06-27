@@ -15,5 +15,14 @@ export class ListContactsComponent implements OnInit {
 
   ngOnInit(): void {
     this.contactTab = this.tmpContactService.getContacts();
+    this.loadContactPhotos();
+  }
+  async loadContactPhotos(): Promise<void> {
+    for (const contact of this.contactTab) {
+      const isValidUrl = await this.tmpContactService.checkPhotoUrl(contact.imageInfo);
+      if (!isValidUrl) {
+        contact.imageInfo = '/assets/img/Non-disponible.jpg';
+      }
+    }
   }
 }

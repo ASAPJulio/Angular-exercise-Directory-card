@@ -1,10 +1,10 @@
 export class ContactModel {
-    imageInfo!: String;
-    nameInfo!: String;
-    lastNameInfo!: String;
+    imageInfo!: string;
+    nameInfo!: string;
+    lastNameInfo!: string;
     birthdayDate!: Date;
-    sexeInfo!: String;
-    heightInfo!: String;
-    typeInfo!: String;
+    sexeInfo!: string;
+    heightInfo!: string;
+    typeInfo!: string;
     item!: number
 }

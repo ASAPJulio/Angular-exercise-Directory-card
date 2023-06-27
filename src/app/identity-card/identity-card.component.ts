@@ -10,14 +10,11 @@ import { ContactService } from 'src/service/contact.service';
 
 export class IdentityCardComponent implements OnInit {
 
-  constructor(private tmpContactService: ContactService) { }
+  constructor(private tmpContactService: ContactService,) { }
 
   @Input() contactType!: ContactModel;
 
   ngOnInit(): void {
-    if (!this.contactType.imageInfo) {
-      this.contactType.imageInfo = "/assets/img/no-pic.jpg"
-    };
 
     if (this.contactType.typeInfo !== 'Client' &&
       this.contactType.typeInfo !== 'Cliente' &&
