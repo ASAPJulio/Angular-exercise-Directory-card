@@ -1,4 +1,4 @@
-<div class="card" routerlink="DetailsCardComponent" href="DetailsContact/:item"
+<div class="card"
     [ngClass]="{supplierCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente', 
             visitorCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente' && contactType.typeInfo !== 'Fournisseur' && contactType.typeInfo !== 'Fournisseuse',
             undefinedCard: contactType.typeInfo !== 'Client' && contactType.typeInfo !== 'Cliente' && contactType.typeInfo !== 'Fournisseur' && contactType.typeInfo !== 'Fournisseuse' && contactType.typeInfo !== 'Visiteu.r.se'}">

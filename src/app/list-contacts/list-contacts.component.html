@@ -1,6 +1,5 @@
 <div class="contactList">
-<div *ngFor="let tmp of contactTab">
+<div *ngFor="let tmp of contactTab" (click)="">
     <app-identity-card [contactType]="tmp"></app-identity-card>
 </div>
 </div>
-<app-details-card></app-details-card>
